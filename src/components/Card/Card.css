@@ -1,0 +1,93 @@
+.card{
+    width: 10rem;
+    height: 13rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    width: 10rem;
+    align-items: center;
+    background: rgb(255, 255,255, 0.26);
+    border: 7px solid var(--orangeCard);
+    box-shadow: var(--boxShadow);
+    border-radius: 20px;
+    padding: 0px 26px 2px 26px;
+}
+.card span:nth-of-type(2){
+    color: var(--gray);
+    font-size: 16px;
+}
+.card>img{
+    transform: scale(0.6);
+    margin-bottom: -2rem;
+}
+.c-button{
+    background: #ffffff;
+    box-shadow:0px 19px 60px rgba(0,0,0,0.08) ;
+    border-radius: 7px;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    color: #5290fd;
+    
+}
+  @media screen and (max-width: 320px){
+    .card{
+        margin-top: -500rem;
+        width: 10rem;
+        height: 14rem;
+        position: absolute;
+        left: -8rem;
+        background: rgb(255, 255,255, 0.26);
+        border: 7px solid var(--orangeCard);
+        box-shadow: var(--boxShadow);
+        border-radius: 20px;
+        padding: 0px 26px 2px 26px;
+    }
+  }
+
+  @media screen and (max-width: 425px){
+    .card{
+        margin-top: -3rem;
+        width: 10rem;
+        height: 14rem;
+        position: absolute;
+        left: -1.5rem;
+        background: rgb(255, 255,255, 0.26);
+        border: 7px solid var(--orangeCard);
+        box-shadow: var(--boxShadow);
+        border-radius: 20px;
+        padding: 0px 26px 2px 26px;
+    }
+  }
+
+
+  @media screen and (max-width: 375px){
+    .card{
+        margin-top: 2rem;
+        width: 10rem;
+        height: 14rem;
+        position: absolute;
+        left: -2.2rem;
+        background: rgb(255, 255,255, 0.26);
+        border: 7px solid var(--orangeCard);
+        box-shadow: var(--boxShadow);
+        border-radius: 20px;
+        padding: 0px 26px 2px 26px;
+    }
+  }
+
+  @media screen and (min-height: 425px) and (max-height: 800px) {
+    .card{
+        margin-top: 2rem;
+        width: 10rem;
+        height: 14rem;
+        position: absolute;
+        background: rgb(255, 255,255, 0.26);
+        border: 7px solid var(--orangeCard);
+        box-shadow: var(--boxShadow);
+        border-radius: 20px;
+        padding: 0px 26px 2px 26px;
+    }
+  }

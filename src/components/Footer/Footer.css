@@ -1,0 +1,86 @@
+.footer{
+    display: flex;
+    align-items: center;
+    margin: -0.5rem -3.rem;
+    position: relative;
+    margin-top: -7rem;
+}
+.f-content{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 4re;
+    gap: 2rem;
+    color:white;
+}
+.f-icons{
+    display: flex;
+    gap:2rem;
+}
+@media screen and (max-width: 768px){
+
+    .f-content{
+      margin-top: 5rem;
+      transform: scale(0.6);
+      font-size: 16px;
+    }
+    .footer{
+        width: 100%;
+        margin-top: 0rem;
+    }
+  }
+  @media screen and (max-width: 320px){
+
+    .f-content{
+      margin-top: 2rem;
+      transform: scale(0.6);
+      font-size: 15px;
+    }
+    .footer{
+        width: 100%;
+        margin-top: 0rem;
+    }
+    .f-icons{
+       transform: scale(0.8);
+    }
+    .f-icons{
+        display: flex;
+        gap:1.5rem;
+        margin-top: -1rem;
+    }
+  }
+  @media screen and (max-width: 375px){
+
+    .f-content{
+      margin-top: 2rem;
+      transform: scale(0.6);
+      font-size: 15px;
+    }
+    .footer{
+        width: 100%;
+        margin-top: 0rem;
+    }
+    .f-icons{
+       transform: scale(0.8);
+    }
+    .f-icons{
+        display: flex;
+        gap:1.5rem;
+        margin-top: -1rem;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .contact-form{
+        padding: 0px 3px 0px 3px;
+        height: 80vh;
+        display: flex;
+        margin-top: -6rem;  
+    }
+    .c-awesone{
+        margin-top: 10rem;
+        left:2rem;
+    }
+}

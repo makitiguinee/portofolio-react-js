@@ -1,0 +1,111 @@
+.contact-form{
+    padding: 0px 3px 0px 3px;
+    height: 80vh;
+    display: flex;
+    margin-top: -6rem;  
+}
+.c-rightl{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    position: relative;
+}
+.c-rightl>form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    
+}
+.c-rightl .user{
+    width: 20rem;
+    height: 2rem;
+    padding: 0.3em;
+    outline: none;
+    border: 2px solid var(--orange);
+    border-radius: 8px;
+    font-size: 16px;
+}
+textarea{
+    height: 4rem!important;
+}
+.c-blur1{
+    top: 1rem;
+    left: 8rem;
+}
+.c-left{
+    display: flex;
+    
+}
+.c-awesone{
+    margin-top: 10rem;
+    
+}
+@media screen and (max-width: 768px) {
+    .contact-form{
+        display: flex;
+        flex-direction: column;
+        margin-top: -9rem;
+        margin-bottom: 10rem;
+        size: 2rem;
+    }
+} 
+
+@media screen and (max-width: 1024px) {
+    .contact-form{
+        padding: 0px 3px 0px 3px;
+        height: 80vh;
+        display: flex;
+        margin-top: -6rem;  
+    }
+    .c-awesone{
+        margin-top: 10rem;
+        left:2rem;
+    }
+} 
+@media screen and (max-width: 320px) {
+    .contact-form{
+        display: flex;
+        flex-direction: column;
+    }
+    .c-awesone{
+        font-size: 1.5rem;
+    }
+    .c-awesone{
+        margin-top: 10rem;
+        left:0rem;
+        padding:0.5rem;
+    }
+    .c-rightl .user{
+        width: 12rem;
+        height: 2rem;
+        padding: 0.1rem;
+        outline: none;
+        border: 2px solid var(--orange);
+        border-radius: 8px;
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .contact-form{
+        display: flex;
+        flex-direction: column;
+    }
+    .c-awesone{
+        font-size: 1.5rem;
+    }
+    .c-awesone{
+        margin-top: 10rem;
+        left:0rem;
+        padding:0.5rem;
+    }
+    .c-rightl .user{
+        width: 15rem;
+        height: 2rem;
+        padding: 0.1rem;
+        outline: none;
+        border: 2px solid var(--orange);
+        border-radius: 8px;
+        font-size: 16px;
+    }
+}

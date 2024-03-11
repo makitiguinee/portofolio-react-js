@@ -1,0 +1,205 @@
+.work{
+    padding: 0 3rem 0 3rem;
+    height: 75rem;
+    margin-top: 4rem;
+    display: flex;
+    margin-bottom:-50rem;
+}
+/* right side */
+.w-right{
+    position: relative;
+}
+.w-mainCircle{
+    left: 9rem;
+    position: relative;
+    width: 18rem;
+    height: 18rem;
+    border-radius: 100%;
+    box-shadow: var(--boxShadow);
+    background-color: white;
+}
+.w-mainCircle>*{
+    position: absolute;
+}
+.w-mainCircle>:nth-child(1){
+    top: -3rem;
+    left: 6rem;
+}
+.w-mainCircle>:nth-child(2){
+    top: 6rem;
+    left: -1rem;
+}
+.w-mainCircle>:nth-child(3){
+    top: 5rem;
+    left: 6rem;
+}
+.w-mainCircle>:nth-child(4){
+    top: 15rem;
+    left: 6rem;
+}
+.w-mainCircle>:nth-child(5){
+    top: 6rem;
+    left: 15rem;
+}
+.w-secCircle{
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    border-radius: 100%;
+    border: 5px solid #ebebeb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--boxShadow);
+    background: white;
+}
+.w-secCircle>img{
+    transform: scale(0.6);
+}
+.w-backCircle{
+    position: absolute;
+    height: 13rem;
+    width: 13rem;
+    border-radius: 100%;
+    z-index: -1;
+}
+.blueCircle{
+    background: #1949BB;
+    left: 10rem;
+    top: -2rem;  
+}
+.yellowCircle{
+    background: #F5C32C;
+    left: 10rem;
+    top: 8rem;
+}
+@media screen and (max-width: 768px) {
+    .work{
+      padding: 0 0rem 0 0rem;
+      display: flex;
+      flex-direction: column;
+      margin-top: 2rem;
+    }
+  
+    .w-right{
+      display: flex;
+      transform: scale(0.8);
+      margin-top: 2rem;
+    }
+    .w-mainCircle{
+      position: static;
+    }
+    .w-backCircle{
+      left: 8rem!important;
+    }
+  
+  }
+  @media screen and (max-width: 320px) {
+    .work{
+        padding: 0 0rem 0 0rem;
+        display: flex;
+        flex-direction: column;
+        margin-top:-8rem;
+        margin-bottom: -40rem;
+      }
+    
+      .w-right{
+        display: flex;
+        transform: scale(0.7);
+        margin-top: 2rem;
+      }
+      .w-mainCircle{
+        position: static;
+      }
+      .w-backCircle{
+        left: 8rem!important;
+      }
+      .awesone>:nth-child(1){
+        font-size: 1.3rem;
+      }
+      .awesone>:nth-child(2){
+        font-size: 1.3rem;
+      }
+    .w-right{
+
+        position: relative;
+        top: -1.5rem;
+        left: -2rem;
+    }
+ }
+ @media screen and (max-width: 375px) {
+    .work{
+        padding: 0 0rem 0 0rem;
+        display: flex;
+        flex-direction: column;
+        margin-top:-8rem;
+      }
+    
+      .w-right{
+        display: flex;
+        transform: scale(0.7);
+        margin-top: 2rem;
+      }
+      .w-mainCircle{
+        position: static;
+      }
+      .w-backCircle{
+        left: 8rem!important;
+      }
+      .awesone>:nth-child(1){
+        font-size: 1.3rem;
+      }
+      .awesone>:nth-child(2){
+        font-size: 1.3rem;
+      }
+    .w-right{
+
+        position: relative;
+        top: -1.5rem;
+        left: -2rem;
+    }
+ }
+ @media screen and (max-width: 1024px) {
+    .work{
+        padding: 0 0rem 0 0rem;
+        display: flex;
+       
+      }
+    
+      .w-right{
+        display: flex;
+        transform: scale(0.7);
+        margin-top: 2rem;
+      }
+      .w-mainCircle{
+        position: static;
+      }
+      .w-backCircle{
+        left: 8rem!important;
+      }
+      .awesone>:nth-child(1){
+        font-size: 1.3rem;
+      }
+      .awesone>:nth-child(2){
+        font-size: 1.3rem;
+      }
+    .w-right{
+
+        position: relative;
+        top: -1.5rem;
+        left: -3rem;
+    }
+ }
+ @media screen and (max-width: 1440px) {
+    .work{
+        padding: 0 0rem 0 0rem;
+        display: flex;
+       
+      }
+    .w-right{
+
+        position: relative;
+        top: -1.5rem;
+        left: -4.5rem;
+    }
+ }

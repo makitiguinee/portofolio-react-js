@@ -1,0 +1,117 @@
+.t-wrapper{
+    padding: 0px 3px 0px 3px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    margin-top: 2rem;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+
+}
+.t-headinng{
+    align-self: center;
+}
+.t-headinng>*{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.t-headinng span:nth-last-of-type(2){
+    color: var(--orange);
+}
+.t-blur1{
+    left: 38rem;
+    top: 16rem;
+}
+.t-blur2{
+    left: 9rem;
+    top: 0rem;
+}
+.tesmonial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2rem;
+    width: 30rem;
+    height: 12rem;
+    background:rgba(255, 255, 255, 0.26);
+    border: 7rem solid var(--blueCard);
+    box-shadow: var(--boxShadow);
+    border-radius: 20px;
+}
+.tesmonial >img{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 100%;
+}
+.tesmonial >span{
+   color: var(--gray);
+}
+.t-wrapper .swiper{
+    width: 100%;
+    height: 70%;
+}
+.t-wrapper .swiper-slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.t-wrapper .swiper-pagination-bullet-active{
+    background: var(--orange);
+}
+@media screen and (max-width: 768px){
+    .t-wrapper{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       margin-top: 1rem;
+    }
+    .tesmonial >img{
+        width: 4rem;
+        height: 4rem;
+        border-radius: 100%;
+    }
+    .t-headinng{
+        font-size: 2rem;
+    }
+  }
+  @media screen and (max-width: 320px){
+    .t-wrapper{
+        padding: 0px 0px 0px 0px;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       margin-top: 1rem;
+       margin-top: 1rem;
+    }
+    .t-headinng>*{
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    .tesmonial{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 0rem;
+        width: 35rem;
+        height: 20rem;
+        padding: 0rem;
+        background:rgba(255, 255, 255, 0.26);
+        border: 7rem solid var(--blueCard);
+        box-shadow: var(--boxShadow);
+        border-radius: 20px;
+    }
+    .tesmonial >img{
+        width: 1.8rem;
+        height:1.8rem;
+        border-radius: 100%;
+    }
+    .tesmonial{
+      padding: 0px 0px;
+     }
+  }
