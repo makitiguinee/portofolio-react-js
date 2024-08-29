@@ -68,3 +68,13 @@
     }
     
 }
+@media screen and (max-width: 425px) {
+    .experience{
+        display: flex;
+    }
+    .experience{
+        margin-top: 8rem;
+        transform: scale(0.8);
+    }
+    
+}

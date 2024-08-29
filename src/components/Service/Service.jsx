@@ -8,6 +8,8 @@ import CondeCv from '../bailo_conde_cv.pdf'
 import { motion } from "framer-motion";
 import { ThemeContext } from '../../../Context'; 
 import { useContext } from "react";
+import { Titre } from '../ui/Titre';
+import SousTitre from '../ui/SousTitre';
 const Service = () => {
     const theme = useContext(ThemeContext);
     const darkMode = theme.state.darkMode;
@@ -16,8 +18,8 @@ const Service = () => {
     <div className="services" id='Services'>
         {/* left side */}
         <div className="awesone">
-            <span style={{ color: darkMode ? "white" : "" }}>Mes Impressionnants </span>
-            <span style={{ color: darkMode ? "white" : "" }}>Services</span><br />
+            <Titre name='' titre='Mes Impressionnants'/> 
+            <SousTitre titre='Services'/>  
             <span>
                 En tant que développeur web et mobile 
                 expérimenté,

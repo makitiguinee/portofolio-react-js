@@ -12,17 +12,20 @@ import Twetter from '../../img/twetter3.png';
 import { ThemeContext } from '../../../Context'; 
 import { useContext } from "react";
 import { motion } from "framer-motion";
+import CompoWork from '../ui/CompoWork';
+import { Titre } from '../ui/Titre';
+import SousTitre from '../ui/SousTitre';
+
 
 const Work = () => {
     // context
-
     const theme = useContext(ThemeContext);
     const darkMode = theme.state.darkMode;
   return (
    <div className="work">
         <div className="awesone">
-            <span style={{ color: darkMode ? "white" : "" }}>Mes Traveaux </span>
-            <span style={{ color: darkMode ? "white" : "" }}>marques et clients</span><br />
+            <Titre name='' titre='Mes Traveaux'/> 
+            <SousTitre titre='Marques et clients'/>
             <span>                 
             Dans ma carrière de développeur, chaque projet représente bien plus qu'une simple ligne de code. <br />
             Chaque ligne écrite est un pas vers la réalisation d'une vision, une opportunité  <br />
@@ -51,25 +54,11 @@ const Work = () => {
               transition={{ duration: 3.5, type: "spring" }}
              className="w-mainCircle">
 
-                <div className="w-secCircle">
-                    <img src={Facebook} alt="facebook" />
-                </div>
-
-                <div className="w-secCircle">
-                    <img src={Linkedin} alt="linkedin" />
-                </div>
-                
-                <div className="w-secCircle">
-                    <img src={Spotify} alt="spotify" />
-                </div>
-
-                <div className="w-secCircle">
-                    <img src={Instagram} alt="instagram" />
-                </div>
-
-                <div className="w-secCircle">
-                    <img src={Github} alt="github" />
-                </div>
+                <CompoWork incon={Facebook}  alts="facebook"/>
+                <CompoWork incon={Linkedin}  alts="linkedin"/>
+                <CompoWork incon={Spotify}  alts="linkedin"/>
+                <CompoWork incon={Instagram}  alts="instagram"/>
+                <CompoWork incon={Github}  alts="github"/>
                 {/* backgroud  circles*/}
                 <div className="w-backCircle blueCircle"></div>
                 <div className="w-backCircle yellowCircle"></div>

@@ -4,6 +4,8 @@ import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { ThemeContext } from '../../../Context'; 
 import { useContext } from "react";
+import { Titre } from '../ui/Titre';
+import SousTitre from '../ui/SousTitre';
 const Contact = () => {
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
@@ -32,8 +34,8 @@ const Contact = () => {
     <div className="contact-form" id='Contact'>
         <div className="c-left">
             <div className="awesone  c-awesone">
-                <span style={{ color: darkMode ? "white" : "" }}>Contact moi </span>
-                <span>En un seul Click</span>
+                <Titre titre='Contact moi'/> 
+                <SousTitre titre="En un seul Click"/>
                 <div className="blur c-blur1" sùtyle={{background:"#ABF1FF94"}}></div>
             </div>
         </div>

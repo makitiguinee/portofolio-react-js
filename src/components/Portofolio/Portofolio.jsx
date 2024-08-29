@@ -8,13 +8,14 @@ import Misicapp from '../../img/musicapp.png';
 import 'swiper/css';
 import { ThemeContext } from '../../../Context'; 
 import { useContext } from "react";
+import { Titre } from '../ui/Titre';
 const Portofolio = () => {
     const theme = useContext(ThemeContext);
     const darkMode = theme.state.darkMode;
   return (
   <div className="protofolio" id='protofolio'>
     {/* heating */}
-    <span style={{ color: darkMode ? "white" : "" }}>Projets Recents</span>
+     <Titre name='' titre='Projets Recents'/> 
     <span>Portofolio</span>
     {/* slide swiper */}
 

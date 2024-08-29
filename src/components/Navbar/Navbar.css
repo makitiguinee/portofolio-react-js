@@ -21,7 +21,7 @@
     font-weight: 400;
 }
 .n-list{
-    flex: 10;
+    flex: 5;
 }
 .n-list>ul{
    cursor: pointer;
@@ -40,6 +40,13 @@ a:hover{
     cursor: pointer;
     color: #FCA61F;
 }
+.tab {
+   cursor: pointer;
+   display: flex;
+  }
+.tab.active {
+   color: #FCA61F;
+  }
 .menu-icon{
     display: none;
 }

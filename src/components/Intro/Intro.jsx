@@ -15,6 +15,8 @@ import FloatingDiv from '../FloatingDiv/FloatingDiv';
 import { ThemeContext } from '../../../Context'; 
 import { useContext } from "react";
 import { Link } from 'react-router-dom';
+import { Titre } from '../ui/Titre';
+import SousTitre from '../ui/SousTitre';
 const Intro = () => {
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
@@ -23,8 +25,8 @@ const Intro = () => {
     <div className="intro">
         <div className="i-left">
             <div className="i-name">
-                <span style={{ color: darkMode ? "white" : "" }} className='intro-titre'> Salut je suis</span>
-                <span className='intro-titre'>Bailo Conde</span>
+                <Titre name='intro-titre' titre='Salut je suis'/> 
+                <SousTitre titre='Bailo Conde'/>           
                 <span>Je suis un développeur web et mobile débutant doté d'une grande 
                     expérience dans la conception et la création de solutions numériques. 
                     Mon engagement envers la qualité du travail se reflète dans ma capacité à 

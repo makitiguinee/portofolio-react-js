@@ -1,3 +1,43 @@
+.boxing{
+   display: flex;
+   color: lightcoral;
+
+}
+.boxe1{
+  margin: 15px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: italic;
+}
+.boxe2{
+    margin: 15px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+  }
+  .boxe3{
+    margin: 15px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+  }
+  
+
+
+
+
+
+
+
 .services{
     padding: 0px 3px 0px 3px;
     display: flex;
@@ -137,3 +177,15 @@
     margin-bottom: 1rem;
 }
 }
+@media screen and (max-width: 1024px) {
+    .services {
+     display:block;
+    }
+    .cards{
+        display:flex;
+        margin-left: 20%;
+    }
+    .services{
+        margin-bottom: 15rem;
+    }
+ }

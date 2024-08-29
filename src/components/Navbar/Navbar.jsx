@@ -1,41 +1,41 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react'
+import React, { useEffect,useState } from 'react'
 import './Navbar.css';
+import { Titre } from '../ui/Titre';
 import Toggle from "../Toggle/Toggle";
+import { navBar } from './NavbarData';
 import Justify from '@iconscout/react-unicons/icons/uil-align-justify';
 import { Link, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
+
+  
 const Navbar = () => {
+  // pour mettre une couleur de texte a l'onglet actif
+  const [activeTab, setActiveTab] = useState('Accueil');
+
+  const handleClick = (tabNumber) => {
+    setActiveTab(tabNumber);
+  };
+  var i=1;
   return (
-    <div>
+    
       <div className="n-bailo">
         <div className="n-left">
-            <div className="name">Bailo Conde</div>
-            <Toggle/>
+          <Titre name='name' titre='Bailo Conde'/> 
+          <Toggle/>
         </div>
         <div className="n-right">
-            <div className="n-list">
-                <ul style={{listStyleType:'none'}}>
-                   <Link spy={true} to='Navbar' smooth={true} activeClass='activeClass'>
-                      <li>Accueil</li>
+            
+                {navBar.map(navbar=>(
+                    <div className="n-list" key={navbar.libelle}>
+                    <ul style={{listStyleType:'none'}}>
+                   <Link spy={true} to={navbar.link} smooth={true} activeClass='activeClass'>
+                      <li className={activeTab === navbar.libelle ? "tab active" : "tab"}  onClick={() => handleClick(navbar.libelle)}>{navbar.libelle} </li>
                    </Link>
-
-                   <Link spy={true} to='Services' smooth={true}>
-                     <li>Services</li>
-                   </Link>
-
-                   <Link spy={true} to='Experiences' smooth={true}>
-                     <li>Experiences</li>
-                   </Link>
-
-                   <Link spy={true} to='protofolio' smooth={true}>
-                     <li>Projets</li>
-                   </Link>
-
-                   <Link c spy={true} to='Contact' smooth={true}>
-                     <li>Contact</li>
-                   </Link> 
                 </ul>
-            </div>
+                    </div>
+                  
+                ))}
+            
            
             <button className="button n-button">Mes Contacts</button>
             <div className='menu-icon' id='toggle_nav'>
@@ -43,7 +43,6 @@ const Navbar = () => {
              </div>
         </div>
       </div>
-    </div>
   )
 }
 

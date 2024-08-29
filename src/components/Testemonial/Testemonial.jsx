@@ -11,6 +11,8 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import { Titre } from '../ui/Titre';
+import SousTitre from '../ui/SousTitre';
 const Testemonial = () => {
     const clients = [
         {
@@ -44,9 +46,9 @@ const Testemonial = () => {
   return (
     <div className="t-wrapper">
         <div className="t-headinng">
-            <span>Les clients obtiennent </span>
-            <span>toujours de l'expérience </span>
-            <span>pour moi...</span>
+            <Titre name='' titre='Les clients obtiennent'/> 
+            <SousTitre titre=" toujours de l'expérience"/> 
+            <Titre name='' titre=" pour moi..."/> 
             <div className="blur t-blur1" sùtyle={{background:"var(--purple)"}}></div>
             <div className="blur t-blur2" style={{background:"var(skyblue)"}}></div>
         </div>
